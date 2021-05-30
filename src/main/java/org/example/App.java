@@ -14,22 +14,21 @@ public class App
     public static void main( String[] args )
     {
         // Password is set as a constant
-        final String password = "abc$123";
+        final String pass = "abc$123";
 
-        // Prompt user for the username (which isn't actually used,
-        // but the prompt asked for me to prompt them so I did)
+        // Prompt user for the username
         System.out.println("What is your username?");
         Scanner usernameIn = new Scanner(System.in);
         String username = usernameIn.next();
 
         // Prompt the user for the password and store in passwordIn
         System.out.println("What is the password?");
-        Scanner passwordIn = new Scanner(System.in);
+        Scanner password = new Scanner(System.in);
 
         // Validate if inputted password matches with constant
-        if (password.equals(passwordIn.next())) {
+        if (pass.equals(password.next())) {
             // If it matches, the user inputted the correct password
-            System.out.println("Welcome!");
+            System.out.println("Welcome " + username + "!");
         }
         // If it doesn't match, print "I don't know you."
         else {
