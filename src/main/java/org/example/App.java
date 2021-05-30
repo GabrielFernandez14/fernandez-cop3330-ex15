@@ -14,7 +14,7 @@ public class App
     public static void main( String[] args )
     {
         // Password is set as a constant
-        final String pass = "abc$123";
+        final String password = "abc$123";
 
         // Prompt user for the username
         System.out.println("What is your username?");
@@ -23,10 +23,10 @@ public class App
 
         // Prompt the user for the password and store in passwordIn
         System.out.println("What is the password?");
-        Scanner password = new Scanner(System.in);
+        Scanner pass = new Scanner(System.in);
 
         // Validate if inputted password matches with constant
-        if (pass.equals(password.next())) {
+        if (password.equals(pass.next())) {
             // If it matches, the user inputted the correct password
             System.out.println("Welcome " + username + "!");
         }
